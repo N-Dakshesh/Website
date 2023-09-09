@@ -10,17 +10,26 @@
 <head>
 	<title>Solid State by HTML5 UP</title>
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
 	<style>
 		/* Style the figure container */
 		figure {
 			text-align: center; /* Center the content horizontally */
 		}
 
-			/* Style the image within the figure */
-			figure img {
-				display: block; /* Make the image a block-level element */
-				margin: 0 auto; /* Center the image horizontally */
-			}
+		.image-container {
+			max-width: 100px; /* Set the maximum width */
+			max-height: 300px; /* Set the maximum height */
+		}
+
+		figure img {
+			max-width: 80%; /* Set the maximum width to 100% of its container */
+			max-height: 500px; /* Set the maximum height */
+			display: block; /* Make the image a block-level element */
+			margin: 0 auto; /* Center the image horizontally */
+		}
 
 		/* Style the caption */
 		figcaption {
@@ -37,35 +46,16 @@
 	<!-- Page Wrapper -->
 	<div id="page-wrapper">
 
-		<!-- Header -->
-		<header id="header" class="alt">
-			<h1><a href="index.html">Solid State</a></h1>
-			<nav>
-				<a href="#menu">Menu</a>
-			</nav>
-		</header>
-
-		<!-- Menu -->
-		<nav id="menu">
-			<div class="inner">
-				<h2>Menu</h2>
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Physics Modules</a></li>
-					<li><a href="elements.html">Elements</a></li>
-					<li><a href="#">Log In</a></li>
-					<li><a href="#">Sign Up</a></li>
-				</ul>
-				<a href="#" class="close">Close</a>
-			</div>
-		</nav>
 
 		<!-- Banner -->
 		<section id="banner">
 			<div class="inner">
-				<div class="logo"><span class="icon fa-gem"></span></div>
 				<h2>Natakala Dakshesh</h2>
-				<p>Porfolio <a href="http://html5up.net">HTML5 UP</a></p>
+				<p>Template provided by <a href="http://html5up.net">HTML5 UP</a></p>
+				<ul class="contact">
+					<i class="icon brands fab fa-linkedin"><a href="#"> https://www.linkedin.com/in/dakshesh-natakala-40637a16b/</a></i>		<br><br>			
+					<i class="icon brands fab fa-github"><a href="#"> https://github.com/N-Dakshesh</a></i>
+				</ul>
 			</div>
 		</section>
 
@@ -75,11 +65,9 @@
 			<!-- One -->
 			<section id="one" class="wrapper spotlight style1">
 				<div class="inner">
-					<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
 					<div class="content">
 						<h2 class="major">About Me</h2>
-						<p>I am currently studying MSci Physics at Imperial College London, and in the final year of my degree. Whilst studying physics, I've had to undertake multiple computational projects - mostly simulation or data analysis - which are detailed below. My main proficiency is in python, where I have extensive experience with numpy, scipy, matplotlib, pandas and pytorch, but I also have experience with mySQL.'</p>
-						<a href="#" class="special">Learn more</a>
+						<p>I am currently studying MSci Physics at Imperial College London, and in the final year of my degree. Whilst studying physics, I've had to undertake multiple computational projects - mostly simulation or data analysis - which are detailed below. My main proficiency is in python, where I have extensive experience with numpy, scipy, matplotlib, pandas and pytorch, but I also have experience with mySQL.</p>
 					</div>
 				</div>
 			</section>
@@ -88,7 +76,7 @@
 			<section id="two" class="wrapper alt style2">
 				<div class="inner">
 					<div class="content">
-						<h2 class="major">Industrial Trajectory Planning using Reinforcement Learning</h2>
+						<h2 class="major">Industrial Trajectory Planning using Reinforcement Learning: Technical University of Munich</h2>
 						<p>
 							<b>Modules used: pytorch, optuna, numpy. </b> <br> With advancements in laser technology, high powered lasers are now accessible to a wide range of manufacturers.
 							This means the trajectory is now the limiting factor in the speed of industrial processes e.g. cutting, whereas
@@ -115,38 +103,49 @@
 			</section>
 
 			<!-- Three -->
-			<section id="three" class="Modelling the shear modulus of cheese using a colloidal cheese model.">
+			<section id="three" class="wrapper style1">
 				<div class="inner">
-					<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 					<div class="content">
-						<h2 class="major">Nullam dignissim</h2>
+						<h2 class="major">Modelling the shear modulus of cheese using a colloidal cheese model: Imperial College London</h2>
 						<p>
-							<b>Modules used: pandas, scipy, numpy. </b> <br>
-							Cheese can be modelled as a 
+							<b>Modules used: Scipy, numpy. </b> <br>
+							Cheese can be modelled as a colloidal gel. For my bachelor project, to compare this fundamental model to an empirical model,
+							I created a simulation of particles interacting as a colloidal gel under the predicted potential, and compared to real data
+							and the empirical model. This required me to maximise performance and minimise memory usage, using tricks such as numpy's einsum function.
+
+							<br> <a href=" Modelling the shear modulus of cheese using a colloidal cheese model.">Modelling the shear modulus of cheese using a colloidal cheese model.</a>
 						</p>
-						<a href="#" class="special">Learn more</a>
+						<a href="#" class="image">
+							<figure>
+								<img src="images/shear2.png" alt="" />
+								<figcaption> A graph showing results of shear modulus calculations from my simulation. </figcaption>
+							</figure>
 					</div>
 				</div>
 			</section>
 
 
 			<!-- Four -->
-			<section id="four" class="Solar Irradiance analysis - calculating optical depth using solarimeter data.">
+			<section id="four" class="wrapper alt style2">
 				<div class="inner">
-					<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 					<div class="content">
-						<h2 class="major">Nullam dignissim</h2>
+						<h2 class="major">Solar Irradiance analysis - calculating optical depth using solarimeter data: Imperial College London</h2>
 						<p>
 							<b>Modules used: pandas, scipy, numpy. </b> <br>
 							This was a lab, where we collected large amounts of solar irradiance data over long periods of time, which was used to calculate cloud and atomospheric information. This required extensive data filtering, and matching up our data with solar information, making use of pandas a neccessity.
 						</p>
-						<a href="#" class="special">Learn more</a>
+						<a href="#" class="image">
+							<figure>
+								<img src="images/solar.jpg" alt="" />
+								<figcaption>A graph showing the distribution of cloud optical depths on 20/03/2023 at Imperial college london.</figcaption>
+							</figure>
+							<a href="#" class="special">Learn more</a>
 					</div>
 				</div>
 			</section>
 
-			<!-- Four -->
-			<section id="four" class="wrapper alt style1">
+			<!-- Five -->
+			<section id="five" class="wrapper spotlight style1">
 				<div class="inner">
 					<h2 class="major">Vibrating waves analysis</h2>
 					<p>
@@ -154,82 +153,44 @@
 						A third year lab, where we analysed amplitude data of vibrating strings to better understand its vibrational modes.
 						This required us to reduce noise, understand and apply low and high pass filters, apply fourier transforms, and automatically identify peaks and vibrational modes.
 					</p>
-					<section class="features">
-						<article>
-							<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-							<h3 class="major">Sed feugiat lorem</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+				</div>
+			</section>
+
+			<!-- Six -->
+			<section id="six" class="wrapper alt style2">
+				<div class="inner">
+					<div class="content">
+						<h2 class="major">Raytracer: Imperial College London</h2>
+						<p>
+							<b>Modules used: numpy, scipy. </b> Learnt and applied Object Orientated Programming.<br>
+							Created ray tracing simulation. Rays of light can interact with lenses and surfaces with different refractive indices.
+							Rays, beams, and surfaces are all coded as objects. 
+						</p>
+						<a href="#" class="image">
+							<figure>
+								<img src="images/ray.png" alt="" />
+								<figcaption> Demonstration of convex lens focusing beams of light. (Top left shows xz plane, top right shows yz plane)</figcaption>
+							</figure>
 							<a href="#" class="special">Learn more</a>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-							<h3 class="major">Nisl placerat</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-							<a href="#" class="special">Learn more</a>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-							<h3 class="major">Ante fermentum</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-							<a href="#" class="special">Learn more</a>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-							<h3 class="major">Fusce consequat</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-							<a href="#" class="special">Learn more</a>
-						</article>
-					</section>
-					<ul class="actions">
-						<li><a href="#" class="button">Browse All</a></li>
-					</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Seven -->
+			<section id="seven" class="wrapper spotlight style1">
+				<div class="inner">
+					<h2 class="major">Creating multidimensional optimisers: Imperial College London</h2>
+					<p>
+						<b>Modules used: numpy. </b> <br>
+						Developed a multidimensional minimiser from scratch to find the most likely value for the mass of a neutrino. 
+						Learnt how to code complex algorithms, and how to effectively apply minimisers. 
+					</p>
 				</div>
 			</section>
 
 		</section>
 
-		<!-- Footer -->
-		<section id="footer">
-			<div class="inner">
-				<h2 class="major">Get in touch</h2>
-				<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field">
-							<label for="email">Email</label>
-							<input type="email" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="4"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
-					</ul>
-				</form>
-				<ul class="contact">
-					<li class="icon solid fa-home">
-						Untitled Inc<br />
-						1234 Somewhere Road Suite #2894<br />
-						Nashville, TN 00000-0000
-					</li>
-					<li class="icon solid fa-phone">(000) 000-0000</li>
-					<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-					<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-					<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-					<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled Inc. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</section>
+
 
 	</div>
 
